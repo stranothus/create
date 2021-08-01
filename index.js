@@ -26,3 +26,5 @@ function $create(node) {
 
 	return element;
 }
+
+export default $create
