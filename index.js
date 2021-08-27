@@ -19,7 +19,7 @@ function $create(node) {
 	let element = document.createElement(startingTag);
 
 	for(let i = 0; i < attributes.length - 1; i+=2) {
-		element.setAttribute(attributes[i], attributes[i + 1].replace(/#\$#/g, "\'"));
+		element.setAttribute(attributes[i], attributes[i + 1].replace(/#\$#/g, "\'").replace(/%20/g, " "));
 	}
 
 	element.innerHTML = HTML;
